@@ -505,6 +505,15 @@ st_write(out_geodf_2, "nyc_class_tree_genus_polygons_v2.gpkg")
 
 table(out_geodf_2$Genus_Predicted)
 
+#####
+# Rename genus columns with "_prob" as requested by reviewer 1
+setwd("/Volumes/NYC_geo/tree_classification/outputs_practical_v2_monthcomp/")
+tree_cls <- st_read("/Volumes/NYC_geo/tree_classification/outputs_practical_v2_monthcomp/nyc_class_tree_genus_polygons_v2.gpkg")
+gen_list <- c("Acer", "Ailanthus", "Betula", "Fraxinus", "Ginkgo", "Gleditsia", "Liquidambar", "Liriodendron", "Malus", "Platanus", "Prunus", "Pyrus", "Quercus", "Robinia", "Styphnolobium", "Tilia", "Ulmus", "Zelkova")
+gen_list_prob <- paste0(gen_list, "_prob")
+tree_cls_2 <- tree_cls %>% rename_at(vars(all_of(gen_list)), ~ gen_list_prob)
+st_write(tree_cls_2, "for_zenodo_v2_1/nyc_class_tree_genus_polygons_v2_1.gpkg")
+
 
 #####
 
