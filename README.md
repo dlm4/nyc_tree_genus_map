@@ -1,33 +1,22 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
+R scripts related to processing NYC classification, stored on Zenodo repository:
 
-R scripts related to processing NYC classification, stored on Zenodo
-repository:
-
-**A map of trees in New York City classified at the genus level from
-remote sensing**
+**A map of trees in New York City classified at the genus level from remote sensing**
 
 <https://doi.org/10.5281/zenodo.17654184>
 
 **1. PlanetScope imagery prep and extraction:**
 
-1.1 Create daily composite mosaics for all PlanetScope imagery, 4 band
-and 8 band versions
+1.1 Create daily composite mosaics for all PlanetScope imagery, 4 band and 8 band versions
 
 1_1_4b: planet_daily_stack_highsunonly_nyc_4b_revised.R
 
 1_1_8b: planet_daily_stack_highsunonly_nyc_8b.R
 
-1.2 Calibrate (empirical line correction) and filter daily composite
-images using ground reference targets
+1.2 Calibrate (empirical line correction) and filter daily composite images using ground reference targets
 
 1_2: ref_targets_planet_highsunonly_allnyc_4or8band.R
 
-1.3 Extract calibrated reflectance data from PlanetScope imagery using
-tree crown polygon objects, 4 band and 8 band versions
+1.3 Extract calibrated reflectance data from PlanetScope imagery using tree crown polygon objects, 4 band and 8 band versions
 
 1_3_4b_planet_daily_stack_nyc_cal_tree_extract_highsunonly_treepoints_tncfinal_4b_v2.R
 
@@ -59,15 +48,13 @@ tree crown polygon objects, 4 band and 8 band versions
 
 3_3_8b: 4ms_tree_spectra_agg_monthcomp_8b.R
 
-3.4 Curate extracted trees to refine dataset for classification and
-counts available tree observations
+3.4 Curate extracted trees to refine dataset for classification and counts available tree observations
 
 3_4: tree_counts_in_planetscope3_updated_mset.R
 
 **4. Classification data organization, running, and validation**
 
-4.1 Combine all datasets, run XGBoost, and apply predictions to polygon
-map
+4.1 Combine all datasets, run XGBoost, and apply predictions to polygon map
 
 4_1: Combine_classification_sources5_mset_monthcomp_v2.R
 
@@ -77,8 +64,7 @@ map
 
 **5. Replies to reviewer comments**
 
-5.1 Additional tests for reviewer comments, including accuracy
-assessment and variable importance
+5.1 Additional tests for reviewer comments, including accuracy assessment and variable importance
 
 5_1: addressing_reviewer_comments.R
 
