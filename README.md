@@ -4,13 +4,9 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 <https://doi.org/10.5281/zenodo.17654184>
 
-```         
-<br/>
-```
+&nbsp;
 
-```         
-<br/>
-```
+&nbsp;
 
 **1. PlanetScope imagery prep and extraction:**
 
@@ -20,17 +16,13 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 1_1_8b_planet_daily_stack_highsunonly_nyc_8b.R
 
-```         
-<br/>
-```
+&nbsp;
 
 1.2 Calibrate (empirical line correction) and filter daily composite images using ground reference targets
 
 1_2_ref_targets_planet_highsunonly_allnyc_4or8band.R
 
-```         
-<br/>
-```
+&nbsp;
 
 1.3 Extract calibrated reflectance data from PlanetScope imagery using tree crown polygon objects, 4 band and 8 band versions
 
@@ -38,13 +30,9 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 1_3_8b_planet_daily_stack_nyc_cal_tree_extract_highsunonly_treepoints_tncfinal_8b_v2.R
 
-```         
-<br/>
-```
+&nbsp;
 
-```         
-<br/>
-```
+&nbsp;
 
 **2. Lidar prep:**
 
@@ -52,21 +40,15 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 2_1_lascatalog_apply_dtm.R
 
-```         
-<br/>
-```
+&nbsp;
 
 2.2 Calculate lidar crown metrics for tree crown polygons
 
 2_2_get_lidar_structural_vars_from_polys_v4.R
 
-```         
-<br/>
-```
+&nbsp;
 
-```         
-<br/>
-```
+&nbsp;
 
 **3. Tree curation and aggregation:**
 
@@ -74,17 +56,13 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 3_1_merge_street_tree_poly.R
 
-```         
-<br/>
-```
+&nbsp;
 
 3.2 Calculate mean summer NDVI based on 4-band PlanetScope
 
 3_2_mean_summer_ndvi.R
 
-```         
-<br/>
-```
+&nbsp;
 
 3.3 Aggregate extracted spectra to monthly composites
 
@@ -92,17 +70,15 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 3_3_8b_tree_spectra_agg_monthcomp_8b.R
 
-```         
-<br/>
-```
+&nbsp;
 
 3.4 Curate extracted trees to refine dataset for classification and counts available tree observations
 
 3_4_tree_counts_in_planetscope3_updated_mset.R
 
-```         
-<br/>
-```
+&nbsp;
+
+&nbsp;
 
 **4. Classification data organization, running, and validation**
 
@@ -110,21 +86,15 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 4_1_combine_classification_sources5_mset_monthcomp_v2.R
 
-```         
-<br/>
-```
+&nbsp;
 
 4.2 Validate XGBoost model predictions, high quality and expanded
 
 4_2_xgb_model_validations_updated.R
 
-```         
-<br/>
-```
+&nbsp;
 
-```         
-<br/>
-```
+&nbsp;
 
 **5. Replies to reviewer comments**
 
@@ -132,9 +102,7 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 5_1_addressing_reviewer_comments.R
 
-```         
-<br/>
-```
+&nbsp;
 
 5.2 Validate tree polygon accuracy
 
