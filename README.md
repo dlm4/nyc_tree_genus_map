@@ -8,13 +8,13 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 1.1 Create daily composite mosaics for all PlanetScope imagery, 4 band and 8 band versions
 
-1_1_4b: planet_daily_stack_highsunonly_nyc_4b_revised.R
+1_1_4b_planet_daily_stack_highsunonly_nyc_4b_revised.R
 
-1_1_8b: planet_daily_stack_highsunonly_nyc_8b.R
+1_1_8b_planet_daily_stack_highsunonly_nyc_8b.R
 
 1.2 Calibrate (empirical line correction) and filter daily composite images using ground reference targets
 
-1_2: ref_targets_planet_highsunonly_allnyc_4or8band.R
+1_2_ref_targets_planet_highsunonly_allnyc_4or8band.R
 
 1.3 Extract calibrated reflectance data from PlanetScope imagery using tree crown polygon objects, 4 band and 8 band versions
 
@@ -44,30 +44,30 @@ R scripts related to processing NYC classification, stored on Zenodo repository:
 
 3.3 Aggregate extracted spectra to monthly composites
 
-3_3_4b: 4ms_tree_spectra_agg_monthcomp_4b.R
+3_3_4b_tree_spectra_agg_monthcomp_4b.R
 
-3_3_8b: 4ms_tree_spectra_agg_monthcomp_8b.R
+3_3_8b_tree_spectra_agg_monthcomp_8b.R
 
 3.4 Curate extracted trees to refine dataset for classification and counts available tree observations
 
-3_4: tree_counts_in_planetscope3_updated_mset.R
+3_4_tree_counts_in_planetscope3_updated_mset.R
 
 **4. Classification data organization, running, and validation**
 
 4.1 Combine all datasets, run XGBoost, and apply predictions to polygon map
 
-4_1: Combine_classification_sources5_mset_monthcomp_v2.R
+4_1_combine_classification_sources5_mset_monthcomp_v2.R
 
 4.2 Validate XGBoost model predictions, high quality and expanded
 
-4_2: xgb_model_validations_updated.R
+4_2_xgb_model_validations_updated.R
 
 **5. Replies to reviewer comments**
 
 5.1 Additional tests for reviewer comments, including accuracy assessment and variable importance
 
-5_1: addressing_reviewer_comments.R
+5_1_addressing_reviewer_comments.R
 
 5.2 Validate tree polygon accuracy
 
-5_2 Polygons_validation_result.R
+5_2_Polygons_validation_result.R
